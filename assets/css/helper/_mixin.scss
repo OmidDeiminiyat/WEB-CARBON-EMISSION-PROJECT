@@ -1,0 +1,5 @@
+@mixin flexdisplay($justify){
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+}
