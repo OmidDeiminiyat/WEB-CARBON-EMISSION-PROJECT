@@ -1,0 +1,25 @@
+
+#Main-header{
+    .Header-Elements{
+        @include flexdisplay(center);
+       margin-top: 10%;
+        h1{
+            width: 10%;
+            position: absolute;
+            left: 30%;
+            font-size: 60px;
+            font-family: "Ubuntu Mono", monospace;
+            font-weight: 400;
+            color: $fontH1;
+        }
+        .first-header-circle{
+            width: 70%;
+        }
+        .first-header-circle{
+            width: 40%;
+            height: 430px;
+            border: 1px solid #E6FF94;
+            border-radius: 50%;
+        }
+    }
+}
