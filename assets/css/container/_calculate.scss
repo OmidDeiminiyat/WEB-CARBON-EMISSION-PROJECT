@@ -1,0 +1,183 @@
+
+#main-section{
+    .thirdCycle{
+        margin-left: 6%;
+            margin-top: -100px;
+            width: 15rem;
+            height: 230px;
+            border: 1px solid $header_background;
+            border-radius: 50%;
+            position: relative;
+            background-color: $nav_Background;
+            @media(max-width:600px) {
+                width: 8rem;
+                height: 130px;
+                margin-top: -70px;
+            }
+            p{
+                text-align: center;
+                @extend %fontFamily;
+                font-size: 30px;
+                width: 60%;
+                position: absolute;
+                top: 30%;
+                left: 20%;
+                font-family: "Ubuntu Mono", monospace;
+                font-weight: 400;
+                color: $fontH1;
+                @media(max-width:600px){
+                    font-size: 18px;
+                }
+            }
+    }
+    .forthCircle{
+            margin-left: 6%;
+            margin-top: -100px;
+            width: 15rem;
+            height: 230px;
+            border: 1px solid $nav_Background;
+            border-radius: 50%;
+            position: absolute;
+            background-color: $header_background;
+            @media(max-width:600px) {
+                width: 8rem;
+                height: 130px;
+                margin-top: -70px;
+            }
+            p{
+                text-align: center;
+                @extend %fontFamily;
+                font-size: 30px;
+                width: 70%;
+                position: absolute;
+                top: 30%;
+                left: 15%;
+                font-family: "Ubuntu Mono", monospace;
+                font-weight: 400;
+                color: $fontH1;
+                @media(max-width:600px){
+                    font-size: 18px;
+                }
+            }
+    }
+    #second-section{
+        width: 100%;
+        #calculate-section {
+            width: 70%;
+            margin-left: 15%;
+            text-align: center;
+            height: 600px;
+            margin-top: -130px;
+            @media(max-width:600px) {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 1px;
+                height: 500px;
+            }
+            .inner-calculator{
+                margin-top: 20%;
+
+                h1{
+                    color: $navText;
+                    @extend %fontFamily;
+                    opacity: 0.7;
+                }
+                h2{
+                    color: $navText;
+                    @extend %fontFamily;
+                    font-weight: 100;
+                }
+                p{
+                    color: $navText;
+                    @extend %fontFamily;
+                }
+                form{
+                    @include gridDisplay(ifr);
+                    width: 60%;
+                    margin-left: 20%;
+                    input[type=text] {
+                        width: 100%;
+                        height: 30px;
+                        border-radius: 30px;
+                        border: none;
+                        background-color: $navText;
+                        color: $fontH1;
+                    }
+                    input[type=button] {
+                        width: 20%;
+                        height: 30px;
+                        border-radius: 30px;
+                        border: none;
+                        background-color: $navText;
+                        margin-left: 40%;
+                        color: $fontH1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+#ThirdSection{
+    width: 100%;
+    background-color: $header_background;
+    margin: 0;
+    padding: 0;
+        #Green-check {
+            width: 70%;
+            margin-left: 15%;
+            text-align: center;
+            height: 600px;
+            margin-top: -130px;
+            @media(max-width:600px) {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 1px;
+                height: 500px;
+            }
+            .inner-calculator{
+                position: absolute;
+                margin-top: 100px;
+                max-width: 100%;
+                h1{
+                    color: $fontH1;
+                    @extend %fontFamily;
+                    opacity: 0.7;
+                    font-size: 3rem;
+                }
+                h2{
+                    color: $fontH1;
+                    @extend %fontFamily;
+                    font-weight: 100;
+                }
+                p{
+                    color: $fontH1;
+                    @extend %fontFamily;
+                }
+                form{
+                    @include gridDisplay(ifr);
+                    width: 60%;
+                    margin-left: 20%;
+                    input[type=text] {
+                        width: 100%;
+                        height: 30px;
+                        border-radius: 30px;
+                        border: none;
+                        background-color: $navText;
+                        color: $fontH1;
+                    }
+                    input[type=button] {
+                        width: 20%;
+                        height: 30px;
+                        border-radius: 30px;
+                        border: none;
+                        background-color: $navText;
+                        margin-left: 40%;
+                        color: $fontH1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
