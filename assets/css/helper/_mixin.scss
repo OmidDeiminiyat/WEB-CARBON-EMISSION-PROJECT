@@ -1,8 +1,17 @@
-@mixin flexdisplay($justify){
+@mixin flexdisplay($justify) {
     display: flex;
     flex-direction: row;
     justify-content: $justify;
 }
+<<<<<<< HEAD
+
+
+@mixin respond-to($media) {
+    @if $media == 'mobile' {
+        @media (max-width: 600px) { @content; }
+    }
+    // Add other media queries if needed
+=======
 @mixin gridDisplay($number-column){
     display: grid;
     grid-template-columns: $number-column;
@@ -25,4 +34,5 @@
         margin-top: -70px;
     }
 
+>>>>>>> eebfc9b8350ad08678da7539c2dd591f61aa0c8e
 }
