@@ -476,9 +476,43 @@
   }
 }
 
-#main-section .thirdCycle p, #main-section .forthCircle p, #main-section #second-section #calculate-section .inner-calculator h1, #main-section #second-section #calculate-section .inner-calculator h2, #main-section #second-section #calculate-section .inner-calculator p, #main-section .innertext h1, #main-section .innertext p, #main-section .innertext ul li, #main-section #ThirdSection #Green-check .inner-calculator h1, #main-section #ThirdSection #Green-check .inner-calculator h2, #main-section #ThirdSection #Green-check .inner-calculator p, #main-section #ThirdSection .lastCircle p, #main-section .circleno3 p {
+footer .innerFooter, #main-section .thirdCycle p, #main-section .forthCircle p, #main-section #second-section #calculate-section .inner-calculator h1, #main-section #second-section #calculate-section .inner-calculator h2, #main-section #second-section #calculate-section .inner-calculator p, #main-section .innertext h1, #main-section .innertext p, #main-section .innertext ul li, #main-section #ThirdSection #Green-check .inner-calculator h1, #main-section #ThirdSection #Green-check .inner-calculator h2, #main-section #ThirdSection #Green-check .inner-calculator p, #main-section #ThirdSection .lastCircle p, #main-section .circleno3 p {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
+}
+
+footer .innerFooter .thirdSec form input[type=email] {
+  border-radius: 30px;
+  border: none;
+}
+
+footer {
+  background-color: #40A578;
+  padding: 0 0 30px 0;
+}
+footer .innerFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 90%;
+  margin-left: 5%;
+  color: #FFFFFF;
+}
+footer .innerFooter .thirdSec form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+footer .innerFooter .thirdSec form input[type=email] {
+  background-color: #E6FF94;
+  height: 21px;
+}
+footer .innerFooter .thirdSec form input[type=button] {
+  width: 100px;
+  border: 1px solid #A5DD9B;
+  border-radius: 30px;
+  background-color: #40A578;
+  color: #E6FF94;
 }
 
 body {

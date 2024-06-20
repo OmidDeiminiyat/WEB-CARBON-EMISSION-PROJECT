@@ -1,0 +1,31 @@
+
+footer {
+    background-color: $header_background;
+    padding: 0 0 30px 0;
+    .innerFooter{
+        @include gridDisplay(1fr 1fr 1fr 1fr);
+        width: 90%;
+        margin-left: 5%;
+        color: $lightParaf;
+        @extend %fontFamily;
+        .thirdSec{
+            form { 
+                @include gridDisplay(1fr);
+                input[type=email]{
+                    background-color: $fontH1;
+                    height: 21px;
+                    @extend %buttonForm;
+                }
+                input[type=button] {
+                    width: 100px;
+                    border: 1px solid $nav_Background;      
+                    border-radius: 30px;
+                    background-color: $header_background;       
+                    color: $fontH1;       
+                }
+            }
+        }
+    }
+       
+    
+}
