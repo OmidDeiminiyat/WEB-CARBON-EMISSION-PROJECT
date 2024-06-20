@@ -53,10 +53,7 @@
   }
 }
 #Main-header .Header-Elements .first-header-circle {
-  width: 70%;
-}
-#Main-header .Header-Elements .first-header-circle {
-  width: 40%;
+  width: 28rem;
   height: 430px;
   border: 1px solid #E6FF94;
   border-radius: 50%;
@@ -69,7 +66,7 @@
 #Main-header .second-header-Elements .second-circle-header {
   margin-left: 60%;
   margin-top: -100px;
-  width: 20%;
+  width: 15rem;
   height: 230px;
   border: 1px solid #E6FF94;
   border-radius: 50%;
@@ -158,14 +155,19 @@
     font-size: 18px;
   }
 }
+#main-section .forfirstSec {
+  overflow: hidden;
+}
 #main-section #second-section {
   width: 100%;
+  max-height: 600px;
 }
 #main-section #second-section #calculate-section {
   width: 70%;
   margin-left: 15%;
   text-align: center;
   height: 600px;
+  max-height: 600px;
   margin-top: -130px;
 }
 @media (max-width: 600px) {
@@ -177,7 +179,8 @@
   }
 }
 #main-section #second-section #calculate-section .inner-calculator {
-  margin-top: 20%;
+  margin-top: 10%;
+  position: relative;
 }
 #main-section #second-section #calculate-section .inner-calculator h1 {
   color: #006769;
@@ -215,8 +218,60 @@
   color: #E6FF94;
   cursor: pointer;
 }
+#main-section .innertext {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative;
+  text-align: left;
+}
+#main-section .innertext :nth-child(1) {
+  width: 50%;
+  margin-top: 10%;
+}
+@media (max-width: 600px) {
+  #main-section .innertext :nth-child(1) {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+  }
+}
+#main-section .innertext h1 {
+  color: #006769;
+  opacity: 0.7;
+}
+#main-section .innertext p {
+  color: #006769;
+}
+#main-section .innertext ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: left;
+}
+#main-section .innertext ul li {
+  color: #006769;
+}
+#main-section .bigCricleDown {
+  position: absolute;
+  display: flex;
+  top: 35%;
+  bottom: 0;
+  margin-left: 56%;
+  width: 47rem;
+  height: 42rem;
+  border-radius: 50%;
+  border: 1px solid #40A578;
+}
+@media (max-width: 600px) {
+  #main-section .bigCricleDown {
+    display: none;
+  }
+}
 #main-section #ThirdSection {
   width: 100%;
+  max-height: 500px;
   background-color: #40A578;
   margin: 0;
   padding: 0;
@@ -226,7 +281,8 @@
   margin-left: 15%;
   text-align: center;
   height: 600px;
-  margin-top: -130px;
+  max-height: 600px;
+  position: relative;
 }
 @media (max-width: 600px) {
   #main-section #ThirdSection #Green-check {
@@ -239,7 +295,9 @@
 #main-section #ThirdSection #Green-check .inner-calculator {
   position: absolute;
   margin-top: 100px;
+  width: 100%;
   max-width: 100%;
+  margin-left: 3%;
 }
 #main-section #ThirdSection #Green-check .inner-calculator h1 {
   color: #E6FF94;
@@ -278,8 +336,147 @@
   color: #E6FF94;
   cursor: pointer;
 }
+#main-section #ThirdSection .lastCircle {
+  margin-left: 6%;
+  margin-top: -200px;
+  width: 15rem;
+  height: 230px;
+  border: 1px solid #40A578;
+  border-radius: 50%;
+  position: relative;
+  background-color: #A5DD9B;
+}
+@media (max-width: 600px) {
+  #main-section #ThirdSection .lastCircle {
+    width: 8rem;
+    height: 130px;
+    margin-top: -70px;
+  }
+}
+#main-section #ThirdSection .lastCircle p {
+  text-align: center;
+  font-size: 30px;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  color: #E6FF94;
+}
+@media (max-width: 600px) {
+  #main-section #ThirdSection .lastCircle p {
+    font-size: 18px;
+  }
+}
+#main-section .overFooter {
+  background-color: #40A578;
+  top: 0;
+  margin-top: -130px;
+  border: 1px solid orange;
+}
+#main-section .overFooter .circleNo5 {
+  background-color: #40A578;
+  border: 1px solid #A5DD9B;
+}
+#main-section .overFooter .circleNo5 p {
+  top: 20%;
+}
+#main-section .overFooter .lastParaf {
+  margin-top: 30px;
+  text-align: left;
+}
+#main-section .overFooter .lastParaf h1 {
+  color: #E6FF94;
+}
+#main-section .overFooter .lastParaf p {
+  color: #FFFFFF;
+}
+#main-section .overFooter .lastParaf .bigCriclelast {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  bottom: 0;
+  margin-left: 56%;
+  width: 47rem;
+  height: 42rem;
+  border-radius: 50%;
+  border: 1px solid #A5DD9B;
+}
+#main-section .overFooter .lastParaf .letsCreateBig {
+  position: absolute;
+  display: flex;
+  top: 20%;
+  bottom: 0;
+  margin-left: 56%;
+  width: 47rem;
+  height: 42rem;
+  border-radius: 50%;
+  border: 1px solid #A5DD9B;
+}
+@media (max-width: 600px) {
+  #main-section .overFooter .lastParaf .letsCreateBig {
+    display: none;
+  }
+}
+#main-section .overFooter .secondSmallCircle {
+  margin-left: -10px;
+  margin-top: 35%;
+  width: 15rem;
+  height: 230px;
+  border: 1px solid #E6FF94;
+  border-radius: 50%;
+  position: relative;
+  background-color: #40A578;
+}
+@media (max-width: 600px) {
+  #main-section .overFooter .secondSmallCircle {
+    display: none;
+  }
+}
+#main-section .circleno3 {
+  margin-left: 6%;
+  margin-top: 50px;
+  top: 130px;
+  width: 15rem;
+  height: 230px;
+  border: 1px solid #A5DD9B;
+  border-radius: 50%;
+  position: relative;
+  background-color: #40A578;
+  top: 2000px;
+  position: absolute;
+}
+@media (max-width: 600px) {
+  #main-section .circleno3 {
+    width: 8rem;
+    height: 130px;
+    margin-top: -70px;
+  }
+}
+@media (max-width: 600px) {
+  #main-section .circleno3 {
+    top: 2150px;
+  }
+}
+#main-section .circleno3 p {
+  text-align: center;
+  font-size: 30px;
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  color: #E6FF94;
+}
+@media (max-width: 600px) {
+  #main-section .circleno3 p {
+    font-size: 18px;
+  }
+}
 
-#main-section .thirdCycle p, #main-section .forthCircle p, #main-section #second-section #calculate-section .inner-calculator h1, #main-section #second-section #calculate-section .inner-calculator h2, #main-section #second-section #calculate-section .inner-calculator p, #main-section #ThirdSection #Green-check .inner-calculator h1, #main-section #ThirdSection #Green-check .inner-calculator h2, #main-section #ThirdSection #Green-check .inner-calculator p {
+#main-section .thirdCycle p, #main-section .forthCircle p, #main-section #second-section #calculate-section .inner-calculator h1, #main-section #second-section #calculate-section .inner-calculator h2, #main-section #second-section #calculate-section .inner-calculator p, #main-section .innertext h1, #main-section .innertext p, #main-section .innertext ul li, #main-section #ThirdSection #Green-check .inner-calculator h1, #main-section #ThirdSection #Green-check .inner-calculator h2, #main-section #ThirdSection #Green-check .inner-calculator p, #main-section #ThirdSection .lastCircle p, #main-section .circleno3 p {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
 }
@@ -288,4 +485,4 @@ body {
   margin: 0;
   padding: 0;
   background-color: #A5DD9B;
-}/*# sourceMappingURL=style.css.map */
+}
