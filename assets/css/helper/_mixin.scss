@@ -1,5 +1,13 @@
-@mixin flexdisplay($justify){
+@mixin flexdisplay($justify) {
     display: flex;
     flex-direction: row;
     justify-content: $justify;
+}
+
+
+@mixin respond-to($media) {
+    @if $media == 'mobile' {
+        @media (max-width: 600px) { @content; }
+    }
+    // Add other media queries if needed
 }

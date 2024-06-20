@@ -16,7 +16,103 @@
   color: #006769;
 }
 
+footer {
+  background: #A5DD9B;
+  color: #006769;
+  text-align: left;
+  padding: 2rem 0;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+footer .footer-content .footer-section {
+  flex: 1;
+  margin: 1rem;
+  min-width: 200px;
+}
+footer .footer-content .footer-section h2 {
+  margin-bottom: 1rem;
+  color: #006769;
+  font-size: 1.5rem;
+}
+footer .footer-content .footer-section p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #006769;
+}
+footer .footer-content .footer-section a {
+  color: #006769;
+  text-decoration: none;
+}
+footer .footer-content .footer-section a:hover {
+  text-decoration: underline;
+}
+footer .footer-content .footer-section.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 600px) {
+  footer .footer-content .footer-section.newsletter form {
+    align-items: center;
+  }
+}
+footer .footer-content .footer-section.newsletter form input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #006769;
+  border-radius: 5px;
+  width: 200px;
+  background-color: #eaf7e7;
+  color: #006769;
+}
+footer .footer-content .footer-section.newsletter form button {
+  padding: 0.5rem;
+  border: 1px solid #006769;
+  border-radius: 5px;
+  background: #dfffa0;
+  color: #006769;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer .footer-content .footer-section.newsletter form button:hover {
+  background: #ceff6d;
+}
+footer .footer-content .footer-logo {
+  text-align: center;
+  flex: 1;
+  margin: 1rem;
+}
+footer .footer-content .footer-logo p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #006769;
+}
+footer .footer-bottom {
+  border-top: 1px solid #00cbcf;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #006769;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "YourFontFamily", sans-serif;
+  background: #A5DD9B;
+  color: #006769;
 }
