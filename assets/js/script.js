@@ -14,7 +14,7 @@ async function fetchData(domain) {
       }
       const data = await response.json();
       console.log(data);
-      carbonData(data)
+      greenData(data)
     } catch (error) {
       console.error('There has been a problem with your fetch operation:', error);
     }
@@ -28,7 +28,7 @@ function recivedUrl(){
 }
 
 
-function carbonData(items) {
+function greenData(items) {
     const firstData = document.getElementById('dataRecived');
     console.log(items.green);
     let colors = 'white';
@@ -99,20 +99,23 @@ function carbonData(items) {
 
 
 async function fetchIPAddress(domain) {
-    const apiEndpoint = `https://api.ipify.org?format=json&domain=${domain}`;
-    
+    const apiEndpoint = `https://dns.google/resolve?name=${domain}&type=A`;
+
     try {
-      const response = await fetch(apiEndpoint);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+        const response = await fetch(apiEndpoint);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        const ipAddress = data.Answer[0].data;
+        console.log(`IP Address for ${domain}: ${ipAddress}`);
+        carbonDataRecived(ipAddress)
+      } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
       }
-      const data = await response.json();
-      console.log(`IP Address for ${domain}: ${data.ip}`);
-      carbonDataRecived(data.ip)
-    } catch (error) {
-      console.error('There has been a problem with your fetch operation:', error);
     }
-  }
+
+
   
 
   
