@@ -476,6 +476,27 @@
   }
 }
 
+/* styles.css */
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #359899; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#backToTopBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 footer .innerFooter, #main-section .thirdCycle p, #main-section .forthCircle p, #main-section #second-section #calculate-section .inner-calculator h1, #main-section #second-section #calculate-section .inner-calculator h2, #main-section #second-section #calculate-section .inner-calculator p, #main-section .innertext h1, #main-section .innertext p, #main-section .innertext ul li, #main-section #ThirdSection #Green-check .inner-calculator h1, #main-section #ThirdSection #Green-check .inner-calculator h2, #main-section #ThirdSection #Green-check .inner-calculator p, #main-section #ThirdSection .lastCircle p, #main-section .circleno3 p {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
@@ -498,6 +519,13 @@ footer .innerFooter {
   margin-left: 5%;
   color: #FFFFFF;
 }
+@media (max-width: 600px) {
+  footer .innerFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
 footer .innerFooter .thirdSec form {
   display: grid;
   grid-template-columns: 1fr;
@@ -513,6 +541,64 @@ footer .innerFooter .thirdSec form input[type=button] {
   border-radius: 30px;
   background-color: #40A578;
   color: #E6FF94;
+}
+footer .innerFooter .forthSec {
+  margin-left: 6%;
+  margin-top: 50px;
+  top: 130px;
+  width: 15rem;
+  height: 230px;
+  border: 1px solid #A5DD9B;
+  border-radius: 50%;
+  position: relative;
+  background-color: #40A578;
+  position: relative;
+  margin-top: -100px;
+  width: 8rem;
+  height: 120px;
+}
+@media (max-width: 600px) {
+  footer .innerFooter .forthSec {
+    width: 8rem;
+    height: 130px;
+    margin-top: -70px;
+  }
+}
+@media (max-width: 600px) {
+  footer .innerFooter .forthSec {
+    display: none;
+  }
+}
+footer .innerFooter .forthSec .footerCircle {
+  margin-left: 6%;
+  margin-top: 50px;
+  top: 130px;
+  width: 15rem;
+  height: 230px;
+  border: 1px solid #A5DD9B;
+  border-radius: 50%;
+  position: relative;
+  background-color: #40A578;
+  position: relative;
+  margin-top: -170px;
+  margin-left: 100px;
+  width: 5rem;
+  height: 80px;
+}
+@media (max-width: 600px) {
+  footer .innerFooter .forthSec .footerCircle {
+    width: 8rem;
+    height: 130px;
+    margin-top: -70px;
+  }
+}
+footer .innerFooter .forthSec p {
+  color: #A5DD9B;
+  text-align: center;
+  margin-top: 40px;
+}
+footer .innerFooter .forthSec p .firstSpan {
+  font-size: 30px;
 }
 
 body {

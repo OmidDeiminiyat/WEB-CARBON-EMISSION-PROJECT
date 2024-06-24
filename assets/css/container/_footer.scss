@@ -8,6 +8,9 @@ footer {
         margin-left: 5%;
         color: $lightParaf;
         @extend %fontFamily;
+        @media(max-width:600px){
+            @include gridDisplay(1fr 1fr);
+        }
         .thirdSec{
             form { 
                 @include gridDisplay(1fr);
@@ -17,15 +20,36 @@ footer {
                     @extend %buttonForm;
                 }
                 input[type=button] {
-                    width: 100px;
-                    border: 1px solid $nav_Background;      
-                    border-radius: 30px;
-                    background-color: $header_background;       
-                    color: $fontH1;       
+                   @include MyButton;
+                }
+            }
+        }
+        .forthSec{
+            @include smallcircle(1px solid $nav_Background, $header_background); 
+            position: relative;
+            margin-top: -100px;
+            width: 8rem;
+            height: 120px;
+            @media(max-width:600px){
+                display: none;
+            }
+            .footerCircle{
+                @include smallcircle(1px solid $nav_Background, $header_background); 
+                position: relative;
+                margin-top: -170px;
+                margin-left: 100px;
+                width: 5rem;
+                height: 80px;
+            }
+            p{
+                color: $nav_Background;
+                text-align: center;
+                margin-top: 40px;
+                .firstSpan{
+                        font-size: 30px
+                    
                 }
             }
         }
     }
-       
-    
 }

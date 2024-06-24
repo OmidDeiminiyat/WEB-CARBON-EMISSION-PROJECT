@@ -12,7 +12,7 @@
 @mixin smallcircle($border, $background) {
     margin-left: 6%;
     margin-top: 50px;
-   top: 130px;
+    top: 130px;
     width: 15rem;
     height: 230px;
     border: $border;
@@ -25,4 +25,12 @@
         margin-top: -70px;
     }
 
+}
+
+@mixin MyButton{
+    width: 100px;
+    border: 1px solid $nav_Background;      
+    border-radius: 30px;
+    background-color: $header_background;       
+    color: $fontH1;       
 }
